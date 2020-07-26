@@ -1,35 +1,37 @@
-# Navigation
-#### DQN implementation for training an agent to navigate and collect yellow bananas while avoiding blue bananas in a square world.
+# Navigation      
 
-##### Environment Description:
-**A reward of +1** : collecting a "yellow" banana
+### DQN implementation for training an agent to navigate and collect yellow bananas while avoiding blue bananas in a square world.
+
+### Environment Description:
+**A reward of +1** : collecting a "yellow" banana         
 **A reward of -1** : collecting a "blue" banana
 
 **State space has 37 dimensions** and contains the agent's velocity, alongwith the ray-based perception of objects around the agent's forward direction.
 
 **Discrete Action Space:**
-0 - move forward
-1 - move backward
-2 - turn left
-3 - turn right
+0 - move forward          
+1 - move backward           
+2 - turn left           
+3 - turn right         
 
-**An average reward of +200** is considered solving the environment.
-##### Platform: 
+**An average reward of +200** is considered solving the environment.            
+
+### Platform: 
 ``` bash 
 Debian 10
 ```
 
-##### Python version: 
+### Python version: 
 ``` python
 python 3.7.3
 ```
 
-##### Library:
+### Library:
 ```python
 pytorch
 ```
 
-##### Installation Steps:
+### Installation Steps:
 ```python
 # Clone drlnd from https://github.com/udacity/deep-reinforcement-learning
 # Create a conda environment
@@ -46,10 +48,11 @@ This installs all the dependencies.
 # Clone this repo and copy the env folder from this repo into the p1-navigation of the drlnd repo.
 jupyter-lab --port=8888
 ```
-Run the [**Navigation_DQN**][nav notebook] notebook.
-Find the **project report** [**here**][report]. 
 
-##### Author:
+Run the [**Navigation_DQN**][nav notebook] notebook.             
+Find the **project report** [**here**][report].          
+    
+### Author:
 [Amal Patel](https://www.linkedin.com/in/patelamalk/)
 
 [//]: # (Use this part to save the links and use the references)
