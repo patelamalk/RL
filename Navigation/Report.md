@@ -1,7 +1,7 @@
-### Aim:
+### Aim
 - To train an Agent to navigate and collect yellow bananans while avoiding the blue bananas in the square world.  
 
-### Environment Description:
+### Environment Description
 - There are **37 dimensions** of the state space.
 - There are **4 discrete** actions for the environment.
 - An **average reward of 200** is considered solving this environment.
