@@ -3,13 +3,13 @@
 ### DQN implementation for training an agent to navigate and collect yellow bananas while avoiding blue bananas in a square world.
 
 ### Environment Description:
-**A reward of +1** : collecting a "yellow" banana         
+**__A reward of +1__** : collecting a "yellow" banana         
 **A reward of -1** : collecting a "blue" banana
 
 **State space has 37 dimensions** and contains the agent's velocity, alongwith the ray-based perception of objects around the agent's forward direction.
 
-**Discrete Action Space:**
-0 - move forward          
+**Discrete Action Space:**     
+0 - move forward           
 1 - move backward           
 2 - turn left           
 3 - turn right         
