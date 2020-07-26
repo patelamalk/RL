@@ -4,7 +4,7 @@
 ### Environment Description
 - There are **37 dimensions** of the state space.
 - There are **4 discrete** actions for the environment.
-- An **average reward of 200** is considered solving this environment.
+- An **average reward of +13** is considered solving this environment.
 
 ### Implementation Details
 **The learning is not directly from pixels. The visual observation is not utilized as state space.**
