@@ -58,7 +58,7 @@ class Agent():
         if random.sample() > epsilon:
             return np.argmax(action_values.cpu().data.numpy())
         else:
-            random.choice(np.arange(self.action_size))
+            return random.choice(np.arange(self.action_size))
 
     def learn(self, experiences):
         states, actions, rewards, next_states, dones = experiences
