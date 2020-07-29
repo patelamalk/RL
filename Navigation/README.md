@@ -14,7 +14,7 @@
 2 - turn left           
 3 - turn right         
 
-**An average reward of +200** is considered solving the environment.            
+**An average reward of +13** is considered solving the environment.            
 
 ### Platform: 
 ``` bash 

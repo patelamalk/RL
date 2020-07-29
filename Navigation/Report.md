@@ -1,10 +1,10 @@
-### Aim:
+### Aim
 - To train an Agent to navigate and collect yellow bananans while avoiding the blue bananas in the square world.  
 
-### Environment Description:
+### Environment Description
 - There are **37 dimensions** of the state space.
 - There are **4 discrete** actions for the environment.
-- An **average reward of 200** is considered solving this environment.
+- An **average reward of +13** is considered solving this environment.
 
 ### Implementation Details
 **The learning is not directly from pixels. The visual observation is not utilized as state space.**
@@ -12,9 +12,9 @@
 - Implemented [**DQN**][deepmind atari]         
 - It uses 2 deep neural networks, local and target as mentioned in [this paper.][deepmind atari]
 
-|Layer|Dimension|   
+|Layer|# of units|   
 |-----|-------|  
-|Input (states)|37, 1, 64|
+|Input (states)|37, 1, batch_size|
 |Fully connected|128|
 |Fully connected|128|
 |Output (actions)| 4|
