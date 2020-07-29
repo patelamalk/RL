@@ -55,7 +55,7 @@ class Agent():
             action_values = self.local_nw(state)
         self.local_nw.train()
 
-        if random.sample() > epsilon:
+        if random.random() > epsilon:
             return np.argmax(action_values.cpu().data.numpy())
         else:
             return random.choice(np.arange(self.action_size))
