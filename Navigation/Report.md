@@ -34,9 +34,9 @@ The **Dueling DQN** converged in **495** episodes.
 
 - Initialize the local and target networks.
 - Initialize the memory.
-- Implemented step method, agent adds the experience and learns every 5 steps in an episode.
+- Implemented step method, agent adds the experience and learns every 4 steps in an episode.
 - Implemented act method, agent selects action for a state with the epsilon greedy policy.
-- Implemented learn method, agent optimizes the Q function i.e. local network.
+- Implemented learn method, agent optimizes the local network.
 - Implemented soft update, transfer the weights of the lcoal network on the target network.
 
 ##### Hyperparameters
