@@ -99,4 +99,4 @@ The **Dueling DQN** converged in **495** episodes.
 
 [udacity]:<https://github.com/udacity/deep-reinforcement-learning>
 
-[nw]:<>
+[nw]:<https://github.com/patelamalk/RL/blob/master/Navigation/plots/Network_Architecture.png?raw=True>
