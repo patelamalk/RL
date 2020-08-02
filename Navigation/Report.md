@@ -20,7 +20,7 @@ The **Dueling DQN** converged in **495** episodes.
 - One example, the agent could learn from the state function if a particular state is good to be in and requires taking no actions.
 - **Linear(state_size, 64) -> ReLU() -> Linear(64, 64) -> ReLU() -> Linear(64, 1)**[State value]**         - (i)**   
 - **Linear(state_size, 64) -> ReLU() -> Linear(64, 64) -> ReLU() -> Linear(64, 4)**[Advantage function]**  - (ii)**
-- **Return  V(s) + (A(s, a) - Mean(A(s, a)))**  
+- **Return  V(s) + (A(s, a) - mean(A(s, a)))**  
 ![Network Architecture][nw]
 - [**Stackoverflow**][sf] link to understand mechanism.
 
