@@ -1,6 +1,6 @@
 # Navigation      
 
-### DQN implementation for training an agent to navigate and collect yellow bananas while avoiding blue bananas in a square world.
+### Dueling DQN implementation for training an agent to navigate and collect yellow bananas while avoiding blue bananas in a square world.
 
 ### Environment Description:
 **__A reward of +1__** : collecting a "yellow" banana         
@@ -49,15 +49,38 @@ This installs all the dependencies.
 jupyter-lab --port=8888
 ```
 
-Run the [**Navigation_DQN**][nav notebook] notebook.             
+Run the [**Bananan_Duel_DQN.ipynb**][nav notebook] notebook.             
 Find the **project report** [**here**][report].          
     
 ### Author:
 [Amal Patel](https://www.linkedin.com/in/patelamalk/)
 
+### References
+- [Deep mind atari][deepmind atari]
+- [Prioritized Experience Replay][per]
+- [Asynchronous Reinforcement Learning][async rl]
+- [Dueling DQN][Dueling]
+- [stackoverflow][sf]
+- [Udacity DRLND repository][udacity]
+
 [//]: # (Use this part to save the links and use the references)
 
-[nav notebook]:<https://github.com/patelamalk/RL/blob/master/Navigation/Navigation_DQN.ipynb>
+[nav notebook]:<https://github.com/patelamalk/RL/blob/master/Navigation/Banana_Duel_DQN.ipynb>
+
 [report]:<https://github.com/patelamalk/RL/blob/master/Navigation/Report.md>
 
+[deepmind atari]:<https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf>
 
+[per]:<https://arxiv.org/abs/1511.05952>
+
+[async rl]:<https://arxiv.org/pdf/1602.01783.pdf>
+
+[Dueling]:<https://arxiv.org/pdf/1511.06581.pdf>
+
+[reward plot]:<https://github.com/patelamalk/RL/blob/master/Navigation/plots/Rewards.png?raw=True>
+
+[Attempt1]:<https://github.com/patelamalk/RL/tree/master/Navigation/Attempt%201%20DQN>
+
+[sf]:<https://datascience.stackexchange.com/questions/34074/dueling-dqn-cant-understand-its-mechanism?rq=1>
+
+[udacity]:<https://github.com/udacity/deep-reinforcement-learning>

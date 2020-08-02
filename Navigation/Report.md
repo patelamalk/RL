@@ -1,33 +1,37 @@
-### Aim
+### Aim:
 - To train an Agent to navigate and collect yellow bananans while avoiding the blue bananas in the square world.  
 
 ### Environment Description
+
 - There are **37 dimensions** of the state space.
 - There are **4 discrete** actions for the environment.
 - An **average reward of +13** is considered solving this environment.
 
 ### Implementation Details
-**The learning is not directly from pixels. The visual observation is not utilized as state space.**
-##### DQN
-- Implemented [**DQN**][deepmind atari]         
-- It uses 2 deep neural networks, local and target as mentioned in [this paper.][deepmind atari]
 
-|Layer|# of units|   
-|-----|-------|  
-|Input (states)|37, 1, batch_size|
-|Fully connected|128|
-|Fully connected|128|
-|Output (actions)| 4|
+**The learning is not directly from pixels. The visual observation is not utilized as state space.**    
+**The [DQN][Attempt1] implementation for this problem didnot converge under 1800 episodes**      
+The **Dueling DQN** converged in **495** episodes.
 
-- The local network is the policy network utilized by the agent to decide actions.      
-- The target network is used to compute the one step look ahead values i.e. the expected next_state value.      
+##### Dueling DQN
+
+- Refer this [paper][Dueling] for implementation details.
+- We split the traditional Q(s, a) from the DQN into 2 components i.e. A(s, a) and V(s)
+- One example, the agent could learn from the state function if a particular state is good to be in and requires taking no actions.
+- **Linear(state_size, 64) -> ReLU() -> Linear(64, 64) -> ReLU() -> Linear(64, 1)**[State value]**         - (i)**   
+- **Linear(state_size, 64) -> ReLU() -> Linear(64, 64) -> ReLU() -> Linear(64, 4)**[Advantage function]**  - (ii)**
+- **Return  V(s) + (A(s, a) - Mean(A(s, a)))**  
+![Network Architecture][nw]
+- [**Stackoverflow**][sf] link to understand mechanism.
 
 ##### Replay Buffer Class
+
 - Used a deque(circular linked list) to store the state, action, reward, next_state, done.    
 - Implemented add method to sequentially add experiences.     
 - Implemented sample method to sample minibatches of experiences(64).      
 
 ##### Agent Class
+
 - Initialize the local and target networks.
 - Initialize the memory.
 - Implemented step method, agent adds the experience and learns every 5 steps in an episode.
@@ -39,35 +43,60 @@
 
 |Parameter| Value|
 |---------|------|
-|BUFFER_SIZE|10000|
+|BUFFER_SIZE|1e5|
 |BATCH_SIZE|64|
 |GAMMA|0.99|
-|LR|5e-3|
-|UPDATE_EVERY|5|
+|LR|5e-4|
+|UPDATE_EVERY|4|
 |TAU|1e-3|
 
 ### Algorithm
+
 - Initialize the agent
 - Initialize scores
 - for episodes <- 1 to n_episodes:
-    - reset the environment.
-    - for time_step <- 1 to n_step:
-        * take step with epsilon-greedy action.
-        * prepare (state, action, reward, next_state, done).
-        * Agent takes a step i.e. learns from the experience, update weights.
-    - Calculate the average reward for the episode
+  - reset the environment.
+  - for time_step <- 1 to n_step:
+    - take step with epsilon-greedy action.
+    - prepare (state, action, reward, next_state, done).
+    - Agent takes a step i.e. learns from the experience, update weights.
+  - Calculate the average reward for the episode
 - plot the reward
 
 ### Rewards plot
+
 ![Avg. Reward / Episode][reward plot]
 
 ### Future Work
-- The agent has not solved the environment.
-- The implementation could be improved by using Dueling DQN, Prioritized Replay.
+
 - Hyperparameter tuning.
+- [Prioritized Expereince Replay][per]
+- [Asynchronous Reinforcement Learning][async rl]
+
+### References
+- [Deep mind atari][deepmind atari]
+- [Prioritized Experience Replay][per]
+- [Asynchronous Reinforcement Learning][async rl]
+- [Dueling DQN][Dueling]
+- [stackoverflow][sf]
+- [Udacity DRLND repository][udacity]
 
 [//]: # (Create alias for all hyperlinks here, no formatting required)
 
 [deepmind atari]:<https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf>
-[tmp image]:<https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png>
-[reward plot]:<https://github.com/patelamalk/RL/blob/master/Navigation/plots/Reward.png?raw=True>
+
+[per]:<https://arxiv.org/abs/1511.05952>
+
+[async rl]:<https://arxiv.org/pdf/1602.01783.pdf>
+
+[Dueling]:<https://arxiv.org/pdf/1511.06581.pdf>
+
+[reward plot]:<https://github.com/patelamalk/RL/blob/master/Navigation/plots/Rewards.png?raw=True>
+
+[Attempt1]:<https://github.com/patelamalk/RL/tree/master/Navigation/Attempt%201%20DQN>
+
+[sf]:<https://datascience.stackexchange.com/questions/34074/dueling-dqn-cant-understand-its-mechanism?rq=1>
+
+[udacity]:<https://github.com/udacity/deep-reinforcement-learning>
+
+[nw]:<>
