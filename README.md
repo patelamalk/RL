@@ -5,7 +5,7 @@ Reinforcement Learning projects and algorithms implementation.
    - Find the **result and report [here][banana report]**.
 2. Will add the Sarsa and Monte Carlo code soon.
 
-[//]: (Add the hyperlinks as comments here)
+[//]: # (Add the hyperlinks as comments here)
 
 [banana]:<https://github.com/patelamalk/RL/tree/master/Navigation>
 [banana report]:<https://github.com/patelamalk/RL/blob/master/Navigation/Report.md>
