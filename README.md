@@ -1,7 +1,9 @@
 # RL
 Reinforcement Learning projects and algorithms implementation.
 
-1. [Navigation][banana] : To train an Agent to navigate and collect yellow bananans while avoiding the blue bananas in the square world.
+1. [Navigation][banana]: 
+   - To train an Agent to navigate and collect yellow bananans while avoiding the blue bananas in the square world.
+   - Implemented Dueling DQN in pytorch.
    - Find the **result and report [here][banana report]**.
 2. Will add the Sarsa and Monte Carlo code soon.
 
