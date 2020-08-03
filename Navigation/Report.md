@@ -77,13 +77,12 @@ The **Dueling DQN** converged in **495** episodes.
 
 ### Future Work
 
-The following techniques could help reduce overfitting.
+The following techniques could help reduce overfitting
 - Hyperparameter tuning.
 - L2 Regularization and Dropout for neural networks.   
 
-Switching the algorithms can also reduce the number of episodes required to converge
-- [Prioritized Expereince Replay][per]
-- [Asynchronous Reinforcement Learning][async rl]
+Additional improvements
+- Prioritizing the experiences which yeild high reward, [Prioritized Expereince Replay][per]
 
 
 ### References
