@@ -65,9 +65,9 @@ Find the **project report** [**here**][report].
 
 [//]: # (Use this part to save the links and use the references)
 
-[nav notebook]:<https://github.com/patelamalk/RL/blob/master/Navigation/Banana_Duel_DQN.ipynb>
+[nav notebook]:<https://github.com/patelamalk/RL/blob/master/DQN_BananaEnv/Banana_Duel_DQN.ipynb>
 
-[report]:<https://github.com/patelamalk/RL/blob/master/Navigation/Report.md>
+[report]:<https://github.com/patelamalk/RL/blob/master/DQN_BananaEnv/Report.md>
 
 [deepmind atari]:<https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf>
 
