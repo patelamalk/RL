@@ -103,15 +103,15 @@ Additional improvements
 
 [Dueling]:<https://arxiv.org/pdf/1511.06581.pdf>
 
-[reward plot]:<https://github.com/patelamalk/RL/blob/master/Navigation/plots/Rewards.png?raw=True>
+[reward plot]:<https://github.com/patelamalk/RL/blob/master/DQN_BananaEnv/plots/Rewards.png?raw=True>
 
-[Attempt1]:<https://github.com/patelamalk/RL/tree/master/Navigation/Attempt%201%20DQN>
+[Attempt1]:<https://github.com/patelamalk/RL/blob/master/DQN_BananaEnv/Navigation/Attempt%201%20DQN>
 
 [sf]:<https://datascience.stackexchange.com/questions/34074/dueling-dqn-cant-understand-its-mechanism?rq=1>
 
 [udacity]:<https://github.com/udacity/deep-reinforcement-learning>
 
-[nw]:<https://github.com/patelamalk/RL/blob/master/Navigation/plots/Network_Architecture.png?raw=True>
+[nw]:<https://github.com/patelamalk/RL/blob/master/DQN_BananaEnv/plots/Network_Architecture.png?raw=True>
 
 [L2]:<https://towardsdatascience.com/intuitions-on-l1-and-l2-regularisation-235f2db4c261>
 

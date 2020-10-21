@@ -1,7 +1,7 @@
 # RL
 Reinforcement Learning projects and algorithms implementation.
 
-1. [Navigation][banana]: 
+1. [DQN_Banana_Env][banana]: 
    - To train an Agent to navigate and collect yellow bananans while avoiding the blue bananas in the square world.
    - Implemented Dueling DQN in pytorch.
    - Find the **result and report [here][banana report]**.
